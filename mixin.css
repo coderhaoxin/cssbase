@@ -17,3 +17,20 @@
   justify-content: center;
   align-items: center;
 }
+
+@define-mixin minwidth-border {
+  position: relative;
+  &::after {
+    position: absolute;
+    display: block;
+    bottom: -100%;
+    right: -100%;
+    left: 0;
+    top: 0;
+    content: '';
+    box-sizing: border-box;
+    pointer-events: none;
+    transform: scale(0.5);
+    transform-origin: 0 0;
+  }
+}
