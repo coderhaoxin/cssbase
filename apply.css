@@ -1,0 +1,39 @@
+
+:root {
+
+  --wordblock {
+    text-overflow: ellipsis;
+    word-break: break-all;
+    overflow: hidden;
+  }
+
+  --wordline {
+    text-overflow: ellipsis;
+    word-break: keep-all;
+    white-space: nowrap;
+    overflow: hidden;
+  }
+
+  --center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  --minwidth-border {
+    position: relative;
+    &::after {
+      position: absolute;
+      display: block;
+      bottom: -100%;
+      right: -100%;
+      left: 0;
+      top: 0;
+      content: '';
+      box-sizing: border-box;
+      pointer-events: none;
+      transform: scale(0.5);
+      transform-origin: 0 0;
+    }
+  }
+}
