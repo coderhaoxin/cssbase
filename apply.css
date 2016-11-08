@@ -1,26 +1,26 @@
 
 :root {
 
-  --wordblock {
+  --wordblock: {
     text-overflow: ellipsis;
     word-break: break-all;
     overflow: hidden;
-  }
+  };
 
-  --wordline {
+  --wordline: {
     text-overflow: ellipsis;
     word-break: keep-all;
     white-space: nowrap;
     overflow: hidden;
-  }
+  };
 
-  --center {
+  --center: {
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  };
 
-  --minwidth-border {
+  --minwidth-border: {
     position: relative;
     &::after {
       position: absolute;
@@ -35,5 +35,5 @@
       transform: scale(0.5);
       transform-origin: 0 0;
     }
-  }
+  };
 }
