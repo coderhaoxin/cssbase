@@ -39,3 +39,7 @@ a, span, aside, label, strong {
 textarea {
   resize: none;
 }
+
+dialog {
+  margin: auto;
+}
